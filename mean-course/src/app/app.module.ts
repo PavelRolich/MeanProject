@@ -5,15 +5,21 @@ import { PostsCreateComponent } from './posts/posts-create/posts-create.componen
 import { MatInputModule } from '@angular/material/input';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatExpansionModule } from '@angular/material/expansion';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HeaderComponent } from './header/header.component';
+import { PostsListComponent } from './posts/posts-list/posts-list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    PostsCreateComponent
+    PostsCreateComponent,
+    HeaderComponent,
+    PostsListComponent
   ],
   imports: [
     BrowserModule,
@@ -22,6 +28,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     MatInputModule,
     MatCardModule,
     MatButtonModule,
+    MatToolbarModule,
+    MatExpansionModule,
     BrowserAnimationsModule,
   ],
   providers: [],
